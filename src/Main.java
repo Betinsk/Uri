@@ -7,15 +7,17 @@ public class Main {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+	
+		int codigo1 = sc.nextInt();
+		int numeroPecas = sc.nextInt();
+		double valorPeca = sc.nextDouble();
 		
-		String nome = sc.next();
-		double salarioFixo = sc.nextDouble();
-		double totalVendas = sc.nextDouble();
+		int codigo2 = sc.nextInt();
+		int numeroPecas2 = sc.nextInt();
+		double valorPeca2 = sc.nextDouble();
 		
-		double TOTALS = salarioFixo + (totalVendas * 0.15);
+		double total = (numeroPecas * valorPeca) + (numeroPecas2 * valorPeca2);
 		
-		System.out.printf("TOTAL = R$ %.2f%n", TOTALS);
-		
-		
+		System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
 	}
 }
