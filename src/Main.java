@@ -7,17 +7,12 @@ public class Main {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-	
-		int codigo1 = sc.nextInt();
-		int numeroPecas = sc.nextInt();
-		double valorPeca = sc.nextDouble();
+		double pi = 3.14159;
 		
-		int codigo2 = sc.nextInt();
-		int numeroPecas2 = sc.nextInt();
-		double valorPeca2 = sc.nextDouble();
+		double raio = sc.nextDouble();
 		
-		double total = (numeroPecas * valorPeca) + (numeroPecas2 * valorPeca2);
+		double volume = (4/3.0) * pi * Math.pow(raio, 3);
+		System.out.printf("VOLUME = %.3f%n", volume);
 		
-		System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
 	}
 }
