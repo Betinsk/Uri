@@ -7,23 +7,13 @@ public class Main {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+	
+		int X = sc.nextInt();
+		double Y = sc.nextDouble();
 		
-		double pi = 3.14159;
+		double consumoMedio = X / Y;
 		
-		double A = sc.nextDouble();
-		double B = sc.nextDouble();
-		double C = sc.nextDouble();
+		System.out.printf("%.3f km/l", consumoMedio);
 		
-		double trianguloRetangulo = A * C /2; 
-		double circuloRaio = pi * Math.pow(C, 2);
-		double areaTrapezio = (A + B) / 2 * C;
-		double areaQuadrado = B * B;
-		double areaRetangulo = A * B;
-		
-		System.out.printf("TRIANGULO: %.3f%n", trianguloRetangulo);
-		System.out.printf("CIRCULO: %.3f%n", circuloRaio);
-		System.out.printf("TRAPEZIO: %.3f%n", areaTrapezio);
-		System.out.printf("QUADRADO: %.3f%n", areaQuadrado);
-		System.out.printf("RETANGULO: %.3f%n", areaRetangulo);
 	}
 }
