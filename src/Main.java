@@ -8,12 +8,19 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 	
-		int X = sc.nextInt();
-		double Y = sc.nextDouble();
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int C = sc.nextInt();
 		
-		double consumoMedio = X / Y;
+		int maiorAB= (A + B + Math.abs(A-B)) / 2;
 		
-		System.out.printf("%.3f km/l", consumoMedio);
+		if (maiorAB> C) {
+			System.out.printf("%d eh o maior\n", maiorAB);
+		}
+		else {
+			System.out.printf("%d eh o maior\n", C);
+		}
+		
 		
 	}
 }
